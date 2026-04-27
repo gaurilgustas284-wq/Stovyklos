@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasaros Stovyklos – Bricks4Kidz, Little Medical School &amp; Business Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body class="preload">
+
+  <header class="header" data-reveal style="--d:0ms">
+    <div class="header-inner">
+      <div class="header-tagline">
+        <span class="header-tagline-text">RINKIS IŠ DAUGIAU NEI 20 STOVYKLŲ VISOJE LIETUVOJE!</span>
+        <div class="header-tagline-sub">Kas tu būsi šią vasarą? Inžinierius? Gydytojas? Lyderis?</div>
+      </div>
+      <div class="header-right">
+        <a href="tel:+37065050556" class="header-phone">+370 650 50556</a>
+        <a href="mailto:info@steamedukacija.lt?subject=Registracija%20%C4%AF%20stovykl%C4%85" class="nav-register">Registruokis į stovyklą</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DISCOUNT POPUP -->
+  <div class="promo-popup" id="promoPopup" aria-hidden="true">
+    <div class="promo-popup-backdrop"></div>
+    <div class="promo-popup-box" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+      <button class="promo-popup-close" aria-label="Uždaryti">×</button>
+      <div class="promo-popup-badge">AKCIJA</div>
+      <div class="promo-popup-price" id="promoTitle">−30 EUR</div>
+      <div class="promo-popup-sub">iki gegužės mėn.</div>
+      <div class="promo-popup-cta-wrap">
+        <a href="mailto:info@steamedukacija.lt?subject=Registracija%20%C4%AF%20stovykl%C4%85%20su%20nuolaida" class="promo-popup-cta">Registruokis dabar</a>
+      </div>
+      <div class="promo-popup-note">Vietų skaičius ribotas</div>
+    </div>
+  </div>
+
+  <main class="container" data-reveal style="--d:80ms">
+
+    <!-- HERO full width -->
+    <section class="hero-section" data-reveal style="--d:100ms">
+      <div class="carousel" data-autoplay="true" data-interval="4500" aria-label="Hero carousel">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#8249;</button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#8250;</button>
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+
+
+            <a href="https://www.bricks4kidz.lt/vasaros-stovyklos/" target="_blank" rel="noreferrer" class="carousel__slide carousel__slide--link">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2Fd1e1111e355a4c109d7d4269352c3237?format=webp&width=1600" alt="Bricks4Kidz vasaros stovykla" class="slide-img">
+              <div class="slide-overlay"><div class="slide-title">Bricks4Kidz</div><div class="slide-sub">Pasirink įdomiausią technologijų stovyklą</div></div>
+            </a>
+
+            <a href="https://littlemedicalschool.com/lithuania/vasaros-stovyklos/" target="_blank" rel="noreferrer" class="carousel__slide carousel__slide--link">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2Fa6330e8e7e594afc91839b8c7fc16f25?format=webp&width=1600" alt="Little Medical School stovykla" class="slide-img">
+              <div class="slide-overlay"><div class="slide-title">Little Medical School</div><div class="slide-sub">Atrask medicinos ar veterinarijos paslaptis</div></div>
+            </a>
+
+            <a href="https://businesskids.lt/" target="_blank" rel="noreferrer" class="carousel__slide carousel__slide--link">
+              <img src="https://businesskids.lt/wp-content/uploads/2023/06/businessteens-img-06.jpg" alt="Business Kids vasaros stovykla" class="slide-img">
+              <div class="slide-overlay slide-overlay--business"><div class="slide-title">Business Kids</div><div class="slide-sub">Sukurk savo verslo idėją – jaunųjų verslo ryklių stovykla</div></div>
+            </a>
+
+            <a href="https://www.bricks4kidz.lt/vasaros-stovyklos/" target="_blank" rel="noreferrer" class="carousel__slide carousel__slide--link">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2F1b25b1968e7b4b5390625227fe4773a6?format=webp&width=1600" alt="Bricks4Kidz dirbtuvės" class="slide-img">
+              <div class="slide-overlay"><div class="slide-title">STEAM programos</div><div class="slide-sub">Konstruojame, koduojame, eksperimentuojame</div></div>
+            </a>
+
+          </div>
+        </div>
+        <div class="carousel__progress" aria-hidden="true"><div class="carousel__bar"></div></div>
+        <div class="carousel__dots" aria-label="Carousel pagination"></div>
+      </div>
+    </section>
+
+    <!-- CAMPS OPTIONS -->
+    <section class="parties-section" data-reveal style="--d:160ms">
+      <div class="inner-wrap">
+
+        <div class="grid-top">
+
+          <a class="card card-bricks4kidz" href="https://www.bricks4kidz.lt/vasaros-stovyklos/" target="_blank" rel="noreferrer">
+            <div class="card-title">Pasirink įdomiausią technologijų stovyklą</div>
+            <div class="card-carousel-wrap">
+              <div class="carousel carousel--card" data-autoplay="true" data-interval="3000" aria-label="Bricks4Kidz carousel">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#8249;</button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#8250;</button>
+                <div class="carousel__viewport">
+                  <div class="carousel__track">
+                    <div class="carousel__slide"><img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2Fd1e1111e355a4c109d7d4269352c3237?format=webp&width=800" alt="LEGO konstravimas" class="slide-img"><img src="/logos/bricks4kidz.jpeg" alt="Bricks4Kidz logo" class="card-logo-overlay"></div>
+                    <div class="carousel__slide"><img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2F1b25b1968e7b4b5390625227fe4773a6?format=webp&width=800" alt="STEAM dirbtuvės" class="slide-img"><img src="/logos/bricks4kidz.jpeg" alt="Bricks4Kidz logo" class="card-logo-overlay"></div>
+                    <div class="carousel__slide"><img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2F2697cd0f589d416a935dfc67d06c265b?format=webp&width=800" alt="LEGO robotai" class="slide-img"><img src="/logos/bricks4kidz.jpeg" alt="Bricks4Kidz logo" class="card-logo-overlay"></div>
+                  </div>
+                </div>
+                <div class="carousel__dots" aria-label="Carousel pagination"></div>
+              </div>
+            </div>
+            <div class="card-hint">Konstruojame su LEGO robotus ir koduojame</div>
+          </a>
+
+          <a class="card card-medical" href="https://littlemedicalschool.com/lithuania/vasaros-stovyklos/" target="_blank" rel="noreferrer">
+            <div class="card-title">Atrask medicinos ar veterinarijos paslaptis</div>
+            <div class="card-carousel-wrap">
+              <div class="carousel carousel--card" data-autoplay="true" data-interval="3500" aria-label="Little Medical School carousel">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#8249;</button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#8250;</button>
+                <div class="carousel__viewport">
+                  <div class="carousel__track">
+                    <div class="carousel__slide"><img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2Fa6330e8e7e594afc91839b8c7fc16f25?format=webp&width=800" alt="Mažieji medikai" class="slide-img"><img src="/logos/lms.jpeg" alt="Little Medical School logo" class="card-logo-overlay"></div>
+                    <div class="carousel__slide"><img src="https://cdn.builder.io/api/v1/image/assets%2Ffc207801b22940b69c4754284e090cf1%2Ff7b6d6767e664297a3451302434d1004?format=webp&width=800" alt="Medicinos žaidimas" class="slide-img"><img src="/logos/lms.jpeg" alt="Little Medical School logo" class="card-logo-overlay"></div>
+                    <div class="carousel__slide"><img src="https://littlemedicalschool.com/lithuania/files/2023/02/naujienlaiskiui-03-500x500.jpg" alt="Medicinos mokykla" class="slide-img"><img src="/logos/lms.jpeg" alt="Little Medical School logo" class="card-logo-overlay"></div>
+                  </div>
+                </div>
+                <div class="carousel__dots" aria-label="Carousel pagination"></div>
+              </div>
+            </div>
+            <div class="card-hint">Ugdome smalsumą, mokslinį mąstymą ir sveikos gyvensenos įpročius</div>
+          </a>
+
+          <a class="card card-business" href="https://businesskids.lt/" target="_blank" rel="noreferrer">
+            <div class="card-title">Sukurk savo verslo idėją</div>
+            <div class="card-carousel-wrap">
+              <div class="carousel carousel--card" data-autoplay="true" data-interval="3200" aria-label="Business Kids carousel">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#8249;</button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#8250;</button>
+                <div class="carousel__viewport">
+                  <div class="carousel__track">
+                    <div class="carousel__slide"><img src="https://businesskids.lt/wp-content/uploads/2023/06/businessteens-img-06.jpg" alt="Business Kids" class="slide-img"><img src="/logos/businesskids-round.jpeg" alt="Business Kids logo" class="card-logo-overlay card-logo-overlay--round"></div>
+                    <div class="carousel__slide"><img src="https://businesskids.lt/wp-content/uploads/2023/04/businesskids-academy-home-08-1024x683.jpg" alt="Business Kids" class="slide-img"><img src="/logos/businesskids-round.jpeg" alt="Business Kids logo" class="card-logo-overlay card-logo-overlay--round"></div>
+                    <div class="carousel__slide"><img src="https://businesskids.lt/wp-content/uploads/2023/06/businessteens-img-09-1024x683.jpg" alt="Business Kids" class="slide-img"><img src="/logos/businesskids-round.jpeg" alt="Business Kids logo" class="card-logo-overlay card-logo-overlay--round"></div>
+                    <div class="carousel__slide"><img src="https://businesskids.lt/wp-content/uploads/2023/06/businessteens-img-04-1024x683.jpg" alt="Business Kids" class="slide-img"><img src="/logos/businesskids-round.jpeg" alt="Business Kids logo" class="card-logo-overlay card-logo-overlay--round"></div>
+                    <div class="carousel__slide"><img src="https://businesskids.lt/wp-content/uploads/2023/04/businesskids-academy-home-06-1024x684.jpg" alt="Business Kids" class="slide-img"><img src="/logos/businesskids-round.jpeg" alt="Business Kids logo" class="card-logo-overlay card-logo-overlay--round"></div>
+                  </div>
+                </div>
+                <div class="carousel__dots" aria-label="Carousel pagination"></div>
+              </div>
+            </div>
+            <div class="card-hint">Jaunųjų verslo ryklių stovykla</div>
+          </a>
+        </div>
+
+        <!-- BENEFITS block (was extras) -->
+        <div class="grid-bottom">
+          <div class="card card-extras card-extras-wide card-static">
+            <div class="card-title">Kodėl verta rinktis mūsų stovyklas?</div>
+            <div class="extras-wide-content">
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-red">🎮</div><div class="extras-wide-label">Mokymasis per žaidimą</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-blue">✨</div><div class="extras-wide-label">Smagus prasmingas laikas</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-yellow">🍽️</div><div class="extras-wide-label">Pilnavertis maitinimas 3 kartus</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-blue">👫</div><div class="extras-wide-label">Nauji draugai ir komandiniai žaidimai</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-blue">📵</div><div class="extras-wide-label">Laikas be nuobodulio ir ekranų</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-red">🌳</div><div class="extras-wide-label">Aktyvios veiklos lauke</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-yellow">🇱🇹</div><div class="extras-wide-label">Visoje Lietuvoje</div></div>
+              <div class="extras-wide-item"><div class="benefit-icon benefit-icon-red">🌍</div><div class="extras-wide-label">Tarptautinės STEAM lyderiaujančios programos</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIALS CAROUSEL -->
+    <section class="testimonials-section inner-wrap" data-reveal style="--d:240ms">
+      <div class="testimonial-track">
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Sūnus praleido nuostabią savaitę Bricks4Kidz stovykloje – kiekvieną dieną grįždavo su naujais LEGO robotais ir idėjomis. Tobulai suderintas žaidimas ir mokymasis. Kitą vasarą tikrai grįšim!"</p><div class="testimonial-author">— Ingrida P., Vilnius · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Little Medical School stovykla – tai ne tik smagu, bet ir labai prasminga. Dukra susipažino su medicinos pagrindais ir grįžo pilna įkvėpimo studijuoti toliau. Ačiū už profesionalumą!"</p><div class="testimonial-author">— Aurimas K., Kaunas · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Business Kids stovykloje vaikas sukūrė savo verslo idėją ir drąsiai pristatė ją prieš auditoriją. Po stovyklos atsirado pasitikėjimas savimi – neįkainojama patirtis!"</p><div class="testimonial-author">— Rasa V., Klaipėda · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Puikiai organizuota stovykla – maitinimas skanus, auklėtojai dėmesingi, programa įdomi. Dukra kiekvieną rytą laukė stovyklos dienos. Rekomenduoju visiems tėvams!"</p><div class="testimonial-author">— Tomas A., Šiauliai · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Po stovyklos sūnus pats pradėjo domėtis programavimu ir robotika. Tai būtent tokia patirtis, kuri pakeičia vaiko požiūrį į mokymąsi. Ačiū visai Bricks4Kidz komandai!"</p><div class="testimonial-author">— Jūratė M., Vilnius · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Laikas be ekranų, aktyvios veiklos lauke, nauji draugai – tiksliai tai, ko reikėjo šią vasarą. Vaikas grįžo laimingas ir pilnas istorijų. Tikrai renkamės ir kitais metais."</p><div class="testimonial-author">— Dovilė Š., Panevėžys · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Veterinarijos modulis Little Medical School stovykloje buvo tiesiog stebuklingas – dukra po jo dar labiau įsimylėjo gyvūnus ir svajoja tapti veterinare. Dėkojame už nuostabią savaitę!"</p><div class="testimonial-author">— Gintarė B., Alytus · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Tarptautinio lygio STEAM programos, puikios patalpos ir pedagogai. Sūnui tai buvo įsimintiniausia vasaros savaitė. Tikrai rekomenduojame kiekvienai šeimai!"</p><div class="testimonial-author">— Mantas L., Kaunas · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Sūnus praleido nuostabią savaitę Bricks4Kidz stovykloje – kiekvieną dieną grįždavo su naujais LEGO robotais ir idėjomis. Tobulai suderintas žaidimas ir mokymasis. Kitą vasarą tikrai grįšim!"</p><div class="testimonial-author">— Ingrida P., Vilnius · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Little Medical School stovykla – tai ne tik smagu, bet ir labai prasminga. Dukra susipažino su medicinos pagrindais ir grįžo pilna įkvėpimo studijuoti toliau. Ačiū už profesionalumą!"</p><div class="testimonial-author">— Aurimas K., Kaunas · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Business Kids stovykloje vaikas sukūrė savo verslo idėją ir drąsiai pristatė ją prieš auditoriją. Po stovyklos atsirado pasitikėjimas savimi – neįkainojama patirtis!"</p><div class="testimonial-author">— Rasa V., Klaipėda · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Puikiai organizuota stovykla – maitinimas skanus, auklėtojai dėmesingi, programa įdomi. Dukra kiekvieną rytą laukė stovyklos dienos. Rekomenduoju visiems tėvams!"</p><div class="testimonial-author">— Tomas A., Šiauliai · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Po stovyklos sūnus pats pradėjo domėtis programavimu ir robotika. Tai būtent tokia patirtis, kuri pakeičia vaiko požiūrį į mokymąsi. Ačiū visai Bricks4Kidz komandai!"</p><div class="testimonial-author">— Jūratė M., Vilnius · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Laikas be ekranų, aktyvios veiklos lauke, nauji draugai – tiksliai tai, ko reikėjo šią vasarą. Vaikas grįžo laimingas ir pilnas istorijų. Tikrai renkamės ir kitais metais."</p><div class="testimonial-author">— Dovilė Š., Panevėžys · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Veterinarijos modulis Little Medical School stovykloje buvo tiesiog stebuklingas – dukra po jo dar labiau įsimylėjo gyvūnus ir svajoja tapti veterinare. Dėkojame už nuostabią savaitę!"</p><div class="testimonial-author">— Gintarė B., Alytus · Google atsiliepimas</div></div></div>
+        <div class="testimonial-slide"><div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Tarptautinio lygio STEAM programos, puikios patalpos ir pedagogai. Sūnui tai buvo įsimintiniausia vasaros savaitė. Tikrai rekomenduojame kiekvienai šeimai!"</p><div class="testimonial-author">— Mantas L., Kaunas · Google atsiliepimas</div></div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT – horizontal -->
+    <section id="contact" class="contact-section inner-wrap" data-reveal style="--d:280ms">
+      <div class="contact-horizontal">
+        <div class="contact-label">Susisiekite su mumis</div>
+        <div class="contact-sep"></div>
+        <div class="contact-item"><strong>Telefonas:</strong> +370 650 50556</div>
+        <div class="contact-sep"></div>
+        <div class="contact-item"><strong>El. paštas:</strong> info@steamedukacija.lt</div>
+        <a href="mailto:info@steamedukacija.lt?subject=Registracija%20%C4%AF%20stovykl%C4%85" class="reg-btn">Registruokis į stovyklą</a>
+      </div>
+    </section>
+
+    <!-- BRANDS / LOGOS FOOTER -->
+    <section class="brands-section inner-wrap" data-reveal style="--d:320ms">
+      <div class="brands-grid brands-grid--3">
+
+        <!-- Bricks4Kidz -->
+        <div class="brand-col">
+          <a href="https://www.bricks4kidz.lt/" target="_blank" rel="noreferrer" class="brand-logo-link">
+            <img src="/logos/bricks4kidz.jpeg" alt="Bricks4Kidz" class="brand-logo-img">
+          </a>
+          <div class="brand-social-links">
+            <a href="https://www.facebook.com/Bricks4KidzLietuva" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/bricks4kidzlietuva/" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.tiktok.com/@bricks4kidzlietuva" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="TikTok">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+
+        <!-- Little Medical School -->
+        <div class="brand-col">
+          <a href="https://littlemedicalschool.com/lithuania/" target="_blank" rel="noreferrer" class="brand-logo-link">
+            <img src="/logos/lms.jpeg" alt="Little Medical School" class="brand-logo-img">
+          </a>
+          <div class="brand-social-links">
+            <a href="https://www.facebook.com/LittlemedicalschoolLietuva" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/mazojimedicinosmokykla/" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.tiktok.com/@mazojimedicinosmokykla" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="TikTok">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+
+        <!-- Business Kids -->
+        <div class="brand-col">
+          <a href="https://businesskids.lt/" target="_blank" rel="noreferrer" class="brand-logo-link">
+            <img src="/logos/businesskids-round.jpeg" alt="Business Kids" class="brand-logo-img">
+          </a>
+          <div class="brand-social-links">
+            <a href="https://www.facebook.com/profile.php?id=61572094061392" target="_blank" rel="noreferrer" class="brand-social-link" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
