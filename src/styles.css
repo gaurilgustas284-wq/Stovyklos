@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 *{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
 html,body{height:100%;margin:0;padding:0}
 body{margin:0;font-family:'Nunito',Arial,sans-serif;color:#111;overflow-x:hidden;background:#fff}
 
@@ -48,6 +49,12 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   font-size:clamp(12px,1.4vw,17px);
   margin-top:4px;
   letter-spacing:.3px;
+}
+.header-tagline-tiny{
+  font-family:'Poppins',sans-serif;font-weight:600;color:rgba(0,0,0,.72);
+  font-size:clamp(11px,1.1vw,13px);
+  margin-top:2px;
+  letter-spacing:.2px;
 }
 
 @keyframes pulse25{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
@@ -147,7 +154,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 .hero-section .carousel__viewport{border-radius:0;overflow:hidden}
 .hero-section .carousel__slide{height:clamp(340px,55vw,620px)}
 .hero-section .slide-img{opacity:1;width:100%;height:100%;object-fit:cover;object-position:center 25%}
-.hero-section .slide-overlay{background:rgba(0,0,0,.52);padding:clamp(16px,3vw,40px) clamp(20px,5vw,64px)}
+.hero-section .slide-overlay{background:linear-gradient(to top,rgba(0,0,0,.78) 0%,rgba(0,0,0,.22) 52%,transparent 100%);padding:clamp(16px,3vw,40px) clamp(20px,5vw,64px)}
 .hero-section .slide-title{font-family:'Poppins',sans-serif;font-size:clamp(28px,4.5vw,54px);font-weight:800;text-shadow:2px 2px 8px rgba(0,0,0,.5)}
 .hero-section .slide-sub{font-size:clamp(13px,1.6vw,20px);font-weight:700;text-shadow:1px 1px 4px rgba(0,0,0,.5)}
 .hero-section .carousel__btn{top:50%;z-index:30;width:50px;height:50px;font-size:30px}
@@ -424,3 +431,126 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   .testimonial-card{padding:20px 18px}
   .testimonial-text{font-size:14px}
 }
+
+/* ── TESTIMONIALS MARQUEE ── */
+.testimonials-section{padding:40px 0 32px;overflow:hidden;max-width:100vw}
+.testimonial-track{
+  display:flex;
+  gap:24px;
+  animation:marquee-scroll 48s linear infinite;
+  will-change:transform;
+  width:max-content;
+}
+.testimonials-section:hover .testimonial-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.testimonial-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+@keyframes marquee-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+.testimonial-slide{
+  flex:0 0 380px;
+  width:380px;
+}
+.testimonial-card{
+  background:#fff;
+  border:2px solid #e8e8e8;border-top:5px solid var(--b4k-blue);
+  border-radius:6px;padding:24px 22px;
+  box-shadow:0 4px 14px rgba(0,0,0,.07);
+  height:100%;
+}
+.testimonial-stars{color:var(--b4k-yellow);font-size:18px;margin-bottom:10px;letter-spacing:2px}
+.testimonial-text{font-size:14px;line-height:1.65;color:#444;font-weight:600;margin:0 0 14px;font-style:italic}
+.testimonial-author{font-size:13px;font-weight:800;color:var(--b4k-blue);font-family:'Poppins',sans-serif}
+
+@media(max-width:600px){
+  .testimonial-slide{flex:0 0 300px;width:300px}
+}
+
+/* ── REGISTRATION FORM SECTION ── */
+.reg-form-section{
+  padding:48px 0 56px;
+  border-top:4px solid var(--b4k-yellow);
+  margin-top:20px;
+  background:linear-gradient(180deg,#fff7d6 0%,#fff 140px);
+}
+.reg-form-section .h2{color:var(--b4k-red);font-size:clamp(24px,3.5vw,36px)}
+.reg-form-section .h2::after{background:var(--b4k-red)}
+
+.reg-form-box{
+  background:#fff;border-radius:10px;
+  border:3px solid #f0d000;
+  box-shadow:0 8px 32px rgba(0,0,0,.10);
+  padding:36px 40px 32px;
+  max-width:1100px;
+}
+@media(max-width:860px){.reg-form-box{padding:24px 20px 22px}}
+
+.reg-step-title{
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;
+  color:var(--b4k-blue);
+  border-left:5px solid var(--b4k-yellow);
+  padding:4px 0 4px 14px;
+  margin:26px 0 16px;
+  letter-spacing:.3px;
+}
+.reg-step-title:first-child{margin-top:0}
+
+.reg-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.reg-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.reg-parents-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.reg-parent-block{display:flex;flex-direction:column;gap:0}
+.reg-parent-label{
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;
+  color:#fff;padding:8px 16px;border-radius:6px 6px 0 0;
+  margin-bottom:0;
+}
+.reg-parent-label--mom{background:var(--b4k-red)}
+.reg-parent-label--dad{background:var(--b4k-blue)}
+.reg-parent-fields{
+  border:2px solid #e8e8e8;border-radius:0 0 6px 6px;
+  padding:16px 16px 8px;
+  display:flex;flex-direction:column;gap:0;
+  border-top:none;
+}
+
+@media(max-width:900px){.reg-grid-4{grid-template-columns:1fr 1fr}}
+@media(max-width:660px){
+  .reg-grid-4,.reg-grid-2,.reg-parents-grid{grid-template-columns:1fr}
+  .reg-parent-label{border-radius:6px 6px 0 0}
+}
+
+.form-divider{height:2px;background:#f0f0f0;margin:24px 0 0;border:none}
+
+/* Shared form field styles */
+.form-group{margin-bottom:16px;display:flex;flex-direction:column}
+.form-group label{font-weight:700;margin-bottom:6px;color:#333;font-size:13px;font-family:'Poppins',sans-serif}
+.form-group input,
+.form-group select{
+  padding:11px 14px;
+  border:2px solid #ddd;border-radius:6px;
+  font-size:14px;font-family:'Nunito',sans-serif;
+  transition:border-color 200ms,box-shadow 200ms;
+  background:#fff;color:#111;
+}
+.form-group input:focus,
+.form-group select:focus{
+  outline:none;
+  border-color:var(--b4k-yellow);
+  box-shadow:0 0 0 3px rgba(255,214,0,.22);
+}
+.form-group input::placeholder{color:#aaa}
+
+.form-success{
+  background:#e8f8ee;border:2px solid var(--b4k-green);border-radius:6px;
+  padding:20px;text-align:center;font-weight:700;
+  color:#007a30;font-size:16px;margin-top:20px;display:none;
+}
+
+.reg-submit-row{margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.reg-submit-row .reg-btn{margin-top:0;font-size:16px;height:52px;padding:0 40px}
+.reg-submit-note{font-size:13px;color:#888;font-weight:600}
+
+@media(max-width:480px){.reg-submit-row{flex-direction:column;align-items:stretch}}
+@media(max-width:480px){.reg-submit-row .reg-btn{justify-content:center}}

@@ -180,6 +180,205 @@
     }
   }
 
+  const CAMP_THEMES = {
+    bricks4kidz: [
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 15-19 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 15-19 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 8-12d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 15-19 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 20-24 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 13-17 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 27 - 31 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 20-24 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 27 - 31 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 13-17 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 20-24 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 27 - 31 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 8-12d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Liepos 20-24 d.",
+    "LEGO® Žaidimų Pasaulis: Minecraft, Fortnite, Roblox, Super Mario!“\n5-9 metų vaikams – Birželio 8-12d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Birželio 8-12d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Birželio 8-12d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Birželio 15-19 d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Birželio 8-12d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Liepos 27 - 31 d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Liepos 20-24 d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Liepos 20-24 d.",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "Minecraft Manija su LEGO®\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Birželio 29-liepos 3 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Birželio 29-liepos 3 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Liepos 13-17 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Liepos 27 - 31 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Rugpjūčio 3-7 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Rugpjūčio 3-7 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Birželio 15-19 d.",
+    "LEGO® Detektyvas\n5-9 metų vaikams – Rugpjūčio 3-7 d.",
+    "LEGO® Meistrai\n5-9 metų vaikams – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "LEGO® Meistrai\n5-9 metų vaikams – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "LEGO® Meistrai\n5-9 metų vaikams – Birželio 29-liepos 3 d.",
+    "LEGO® Meistrai\n5-9 metų vaikams – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "LEGO® Meistrai\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "Robotikos Nuotykiai\n5-9 metų vaikams – Liepos 7-11 d.  (4 dienos)",
+    "Robotikos Nuotykiai\n5-9 metų vaikams – Liepos 13-17 d.",
+    "Robotikos Nuotykiai\n5-9 metų vaikams – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "Robotikos Nuotykiai\n5-9 metų vaikams – Birželio 29-liepos 3 d.",
+    "Robotikos Nuotykiai\n5-9 metų vaikams – Birželio 29-liepos 3 d.",
+    "9-12 metų Ateities išradėjai: robotai, žaidimai ir AI – Birželio 15-19 d.",
+    "9-12 metų Ateities išradėjai: robotai, žaidimai ir AI – Liepos 7-11 d.  (4 dienos)",
+    "9-12 metų Ateities išradėjai: robotai, žaidimai ir AI – Birželio 29-liepos 3 d.",
+    "9-12 metų Ateities išradėjai: robotai, žaidimai ir AI – Liepos 13-17 d.",
+    "9-12 metų jaunųjų verslo ryklių stovykla – Birželio 29-liepos 3 d.",
+    "9-12 metų jaunųjų verslo ryklių stovykla – Birželio 29-liepos 3 d.",
+    "9-12 metų jaunųjų verslo ryklių stovykla – Liepos 20-24 d.",
+    "9-12 metų jaunųjų verslo ryklių stovykla – Birželio 29-liepos 3 d.",
+    "3-5,5 m. Keliauk su LEGO aplink pasaulį – Birželio 29-liepos 3 d.",
+    "3-5,5 m. Keliauk su LEGO aplink pasaulį – Kaunas",
+    "3-5,5 m. Keliauk su LEGO aplink pasaulį – Savanoriu pr. 130",
+    "3-5,5 m . Magiška LEGO® stovykla – Liepos 7-11 d.  (4 dienos)",
+    "3-5,5 m . Magiška LEGO® stovykla – Palanga",
+    "3-5,5 m . Magiška LEGO® stovykla – Žuvėdros viešbutis, meilės al.11",
+    "3-5,5 m. Sukurk savo zoologijos sodą su LEGO® – Liepos 13-17 d.",
+    "3-5,5 m. Sukurk savo zoologijos sodą su LEGO® – Panevėžys",
+    "3-5,5 m. Sukurk savo zoologijos sodą su LEGO® – Respublikos g. 34",
+    "3-5,5 m. Superherojų nuotykiai su LEGO® – Liepos 20-24 d.",
+    "3-5,5 m. Superherojų nuotykiai su LEGO® – Alytus",
+    "3-5,5 m. Superherojų nuotykiai su LEGO® – Jaunimo g. 1"
+  ],
+  lms: [
+    "Jaunasis Veterinaras 7-12 m – Birželio 15-19 d.",
+    "Jaunasis Veterinaras 7-12 m – Birželio 8-12d.",
+    "Jaunasis Veterinaras 7-12 m – Birželio 15-19 d.",
+    "Jaunasis Veterinaras 7-12 m – Birželio 15-19 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 7-11 d.  (4 dienos)",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 27 - 31 d.",
+    "Jaunasis Veterinaras 7-12 m – Rugpjūčio 3-7 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 20-24 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Birželio 15-19 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Birželio 29-liepos 3 d.",
+    "Jaunasis Veterinaras 7-12 m – Rugpjūčio 3-7 d.",
+    "Jaunasis Veterinaras 7-12 m – Liepos 13-17 d.",
+    "Jaunasis Veterinaras 7-12 m – Visos datos 2026",
+    "Zoologijos sodo veterinaras 7-12 m. – Birželio 29-liepos 3 d.",
+    "Zoologijos sodo veterinaras 7-12 m. – Birželio 29-liepos 3 d.",
+    "Zoologijos sodo veterinaras 7-12 m. – Liepos 27 - 31 d.",
+    "Zoologijos sodo veterinaras 7-12 m. – Rugpjūčio 3-7 d.",
+    "Zoologijos sodo veterinaras 7-12 m. – Rugpjūčio 10-14 d. (4 dienos)",
+    "Zoologijos sodo veterinaras 7-12 m. – Birželio 29-liepos 3 d.",
+    "Pažink medikų profesijas  7-12 m – Liepos 7-11 d.  (4 dienos)",
+    "Pažink medikų profesijas  7-12 m – Birželio 15-19 d.",
+    "Pažink medikų profesijas  7-12 m – Birželio 8-12d.",
+    "Pažink medikų profesijas  7-12 m – Birželio 29-liepos 3 d.",
+    "Pažink medikų profesijas  7-12 m – Liepos 7-11 d.  (4 dienos)",
+    "Pažink medikų profesijas  7-12 m – Liepos 27 - 31 d.",
+    "Pažink medikų profesijas  7-12 m – Liepos 13-17 d.",
+    "Pažink medikų profesijas  7-12 m – Liepos 27 - 31 d.",
+    "Pažink medikų profesijas  7-12 m – Liepos 27 - 31 d.",
+    "Išgyvenimo medicina  7-12 m – Birželio 8-12d.",
+    "Išgyvenimo medicina  7-12 m – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "Išgyvenimo medicina  7-12 m – Liepos 13-17 d.",
+    "Išgyvenimo medicina  7-12 m – Liepos 7-11 d.  (4 dienos)",
+    "Išgyvenimo medicina  7-12 m – Liepos 20-24 d.",
+    "Išgyvenimo medicina  7-12 m – Liepos 20-24 d.",
+    "Jūros gelmių tyrinėtojas  7-12 m – Birželio 8-12d.",
+    "Jūros gelmių tyrinėtojas  7-12 m – Rugpjūčio 3-7 d.",
+    "Medicinos detektyvas  7-12 m – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "Medicinos detektyvas  7-12 m – Liepos 27 - 31 d.",
+    "Medicinos detektyvas  7-12 m – Birželio 29-liepos 3 d.",
+    "Medicinos detektyvas  7-12 m – Birželio 22- 26 d. (4 dienos, ne darbo 06.24)",
+    "Medicinos detektyvas  7-12 m – Rugpjūčio 3-7 d.",
+    "Medicinos detektyvas  7-12 m – Birželio 29-liepos 3 d.",
+    "Medicinos detektyvas  7-12 m – Liepos 27 - 31 d.",
+    "Medicinos detektyvas  7-12 m – Rugpjūčio 3-7 d.",
+    "Medicinos detektyvas  7-12 m – Liepos 27 - 31 d.",
+    "MEDICINOS ĮVADAS  JAUNIMUI  12-16 m – Liepos 20-24 d.",
+    "MEDICINOS ĮVADAS  JAUNIMUI  12-16 m – Liepos 27 - 31 d.",
+    "MEDICINOS ĮVADAS  JAUNIMUI  12-16 m – Liepos 27 - 31 d.",
+    "Aš mažasis veterinaras 5-7 m – Liepos 13-17 d.",
+    "Aš mažasis veterinaras 5-7 m – Liepos 13-17 d.",
+    "Aš mažasis veterinaras 5-7 m – Liepos 7-11 d.  (4 dienos)",
+    "Aš mažasis veterinaras 5-7 m – Liepos 13-17 d.",
+    "Aš mažasis veterinaras 5-7 m – Liepos 13-17 d.",
+    "Aš mažasis veterinaras 5-7 m – Vilnius Pasilaiciai",
+    "Aš mažasis veterinaras 5-7 m – Gabijos g. 40",
+    "Aš mažasis gydytojas 5-7 m – Liepos 7-11 d.  (4 dienos)",
+    "Aš mažasis gydytojas 5-7 m – Liepos 7-11 d.  (4 dienos)",
+    "Aš mažasis gydytojas 5-7 m – Rugpjūčio 10-14 d. (4 dienos)",
+    "Aš mažasis gydytojas 5-7 m – Birželio 29-liepos 3 d.",
+    "Aš mažasis gydytojas 5-7 m – Liepos 7-11 d.  (4 dienos)",
+    "Aš mažasis gydytojas 5-7 m – Gargždai",
+    "Aš mažasis gydytojas 5-7 m – Gargždų muzikos mokykla. Kvietinių g. 2, Gargždai"
+  ],
+};
+
+  function initCampThemeDynamic() {
+    const campSel = document.getElementById('camp');
+    const themeSel = document.getElementById('theme');
+    if (!campSel || !themeSel) return;
+
+    campSel.addEventListener('change', () => {
+      const themes = CAMP_THEMES[campSel.value] || [];
+      themeSel.innerHTML = themes.length
+        ? themes.map(t => `<option value="${t}">${t}</option>`).join('')
+        : '<option value="">Pirmiau pasirinkite stovyklą</option>';
+    });
+  }
+
+  function initRegForm() {
+    const form = document.getElementById('regForm');
+    const success = document.getElementById('regSuccess');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+      })
+      .then(() => {
+        if (success) { success.style.display = 'block'; }
+        form.reset();
+        // Reset theme dropdown after reset
+        const themeSel = document.getElementById('theme');
+        if (themeSel) themeSel.innerHTML = '<option value="">Pirmiau pasirinkite stovyklą</option>';
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(() => {
+        // Mailto fallback
+        const d = Object.fromEntries(data.entries());
+        const body = [
+          `Stovykla: ${d.stovykla || ''}`,
+          `Miestas: ${d.miestas || ''}`,
+          `Amžius: ${d.amzius || ''}`,
+          `Tema ir data: ${d.tema || ''}`,
+          ``,
+          `Vaiko vardas pavardė: ${d.vaiko_vardas_pavarde || ''}`,
+          `Klasė / grupė: ${d.klase_grupe || ''}`,
+          ``,
+          `Mamos vardas pavardė: ${d.mamos_vardas_pavarde || ''}`,
+          `Mamos telefonas: ${d.mamos_telefonas || ''}`,
+          `Mamos el. paštas: ${d.mamos_epastas || ''}`,
+          ``,
+          `Tėvo vardas pavardė: ${d.tevo_vardas_pavarde || ''}`,
+          `Tėvo telefonas: ${d.tevo_telefonas || ''}`,
+          `Tėvo el. paštas: ${d.tevo_epastas || ''}`,
+        ].join('\n');
+        window.location.href = `mailto:info@steamedukacija.lt?subject=${encodeURIComponent('Registracija į stovyklą – ' + (d.stovykla || ''))}&body=${encodeURIComponent(body)}`;
+      });
+    });
+  }
+
   function initPromoPopup() {
     const popup = document.getElementById('promoPopup');
     if (!popup) return;
@@ -228,6 +427,8 @@
 
     document.querySelectorAll('.carousel').forEach((el) => new SimpleCarousel(el));
 
+    initCampThemeDynamic();
+    initRegForm();
     initPromoPopup();
   });
 })();
