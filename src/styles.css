@@ -507,6 +507,10 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 }
 .reg-parent-label--mom{background:var(--b4k-red)}
 .reg-parent-label--dad{background:var(--b4k-blue)}
+.reg-parent-label--guardian{background:var(--b4k-blue)}
+.reg-parent-block--single{max-width:560px}
+.reg-parent-fields--single{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 16px}
+@media(max-width:700px){.reg-parent-fields--single{grid-template-columns:1fr}}
 .reg-parent-fields{
   border:2px solid #e8e8e8;border-radius:0 0 6px 6px;
   padding:16px 16px 8px;
@@ -524,7 +528,8 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 
 /* Shared form field styles */
 .form-group{margin-bottom:16px;display:flex;flex-direction:column}
-.form-group label{font-weight:700;margin-bottom:6px;color:#333;font-size:13px;font-family:'Poppins',sans-serif}
+.form-group label{font-weight:700;margin-bottom:6px;color:#333;font-size:13px;font-family:'Poppins',sans-serif;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.field-hint{font-weight:500;color:#999;font-size:11px;font-style:italic}
 .form-group input,
 .form-group select{
   padding:11px 14px;
@@ -546,6 +551,11 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   padding:20px;text-align:center;font-weight:700;
   color:#007a30;font-size:16px;margin-top:20px;display:none;
 }
+
+.reg-privacy-row{margin:24px 0 8px}
+.reg-privacy-label{display:flex;align-items:flex-start;gap:10px;font-size:13px;font-weight:600;color:#444;cursor:pointer;line-height:1.5}
+.reg-privacy-label input[type=checkbox]{margin-top:2px;flex-shrink:0;width:16px;height:16px;accent-color:var(--b4k-red)}
+.reg-privacy-label a{color:var(--b4k-blue);text-underline-offset:2px}
 
 .reg-submit-row{margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .reg-submit-row .reg-btn{margin-top:0;font-size:16px;height:52px;padding:0 40px}
