@@ -454,25 +454,25 @@
 
     businesskids: {
       kaunas: [
-        'Jaunųjų verslo ryklių stovykla – Birželio 29–liepos 3 d.',
-        'Jaunųjų verslo ryklių stovykla – Liepos 20-24 d.',
-        'Jaunųjų verslo ryklių stovykla – Rugpjūčio 3-7 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Birželio 29–liepos 3 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Liepos 20-24 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Rugpjūčio 3-7 d.',
       ],
       vilnius_zverynas: [
         'Jaunųjų verslo ryklių stovykla – Liepos 20-24 d.',
-        'Jaunųjų verslo ryklių stovykla – Rugpjūčio 3-7 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Rugpjūčio 3-7 d.',
       ],
       vilnius_gabijos: [
-        'Jaunųjų verslo ryklių stovykla – Birželio 29–liepos 3 d.',
-        'Jaunųjų verslo ryklių stovykla – Liepos 13-17 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Birželio 29–liepos 3 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Liepos 13-17 d.',
       ],
       klaipeda: [
-        'Jaunųjų verslo ryklių stovykla – Liepos 20-24 d.',
-        'Jaunųjų verslo ryklių stovykla – Rugpjūčio 3-7 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Liepos 20-24 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Rugpjūčio 3-7 d.',
       ],
       panevezys: [
-        'Jaunųjų verslo ryklių stovykla – Birželio 29–liepos 3 d.',
-        'Jaunųjų verslo ryklių stovykla – Liepos 27-31 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Birželio 29–liepos 3 d.',
+        'Jaunųjų verslo ryklių stovykla (9–12 m.) – Liepos 27-31 d.',
       ],
     },
   };
