@@ -37,7 +37,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 
 .header-tagline{grid-column:2;text-align:center}
 .header-tagline-text{
-  font-family:'Poppins',sans-serif;font-weight:900;color:#111;
+  font-family:'Poppins',sans-serif;font-weight:900;color:var(--b4k-red);
   font-size:clamp(14px,2vw,26px);
   letter-spacing:1.2px;
   text-transform:uppercase;
@@ -150,7 +150,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 .hero-section .carousel__viewport{border-radius:0;overflow:hidden}
 .hero-section .carousel__slide{height:clamp(340px,55vw,620px)}
 .hero-section .slide-img{opacity:1;width:100%;height:100%;object-fit:cover;object-position:center 25%}
-.hero-section .slide-overlay{background:linear-gradient(to top,rgba(0,0,0,.78) 0%,rgba(0,0,0,.22) 52%,transparent 100%);padding:clamp(16px,3vw,40px) clamp(20px,5vw,64px)}
+.hero-section .slide-overlay{background:transparent;padding:clamp(16px,3vw,40px) clamp(20px,5vw,64px)}
 .hero-section .slide-title{font-family:'Poppins',sans-serif;font-size:clamp(28px,4.5vw,54px);font-weight:800;text-shadow:2px 2px 8px rgba(0,0,0,.5)}
 .hero-section .slide-sub{font-size:clamp(13px,1.6vw,20px);font-weight:700;text-shadow:1px 1px 4px rgba(0,0,0,.5)}
 .hero-section .carousel__btn{top:50%;z-index:30;width:50px;height:50px;font-size:30px}
@@ -175,7 +175,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 
 /* ── PARTIES SECTION ── */
 .parties-section{padding:28px 0 0}
-.grid-top{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
+.grid-top{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px;align-items:stretch}
 .grid-bottom{display:flex;justify-content:center}
 .grid-bottom .card{width:100%}
 @media(max-width:900px){.grid-top{grid-template-columns:1fr 1fr}}
@@ -183,7 +183,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 
 /* ── CARDS ── */
 .card{
-  display:block;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;text-decoration:none;color:inherit;
   padding:16px 16px 14px;border-radius:6px;
   border:3px solid rgba(0,0,0,.08);
   background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.08);
@@ -192,7 +192,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.14)}
 .card-static{cursor:default}
 .card-static:hover{transform:none;box-shadow:0 4px 16px rgba(0,0,0,.08)}
-.card-title{font-size:20px;font-weight:800;margin-bottom:12px;letter-spacing:.3px;font-family:'Poppins',sans-serif}
+.card-title{font-size:18px;font-weight:800;margin-bottom:12px;letter-spacing:.3px;font-family:'Poppins',sans-serif;min-height:3em;display:flex;align-items:flex-start}
 .card-hint{margin-top:10px;font-size:13px;font-weight:700;font-family:'Poppins',sans-serif}
 .card-bricks4kidz{border-color:var(--b4k-blue)}.card-bricks4kidz .card-title,.card-bricks4kidz .card-hint{color:var(--b4k-blue)}
 .card-medical{border-color:var(--b4k-red)}.card-medical .card-title,.card-medical .card-hint{color:var(--b4k-red)}
@@ -202,11 +202,12 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 /* Logo overlay on card carousel slides */
 .card-logo-overlay{
   position:absolute;top:10px;right:10px;z-index:4;
-  width:54px;height:54px;object-fit:contain;
-  background:#fff;padding:6px;border-radius:8px;
-  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  width:72px;height:72px;object-fit:contain;
+  background:#fff;padding:5px;border-radius:10px;
+  box-shadow:0 4px 14px rgba(0,0,0,.30);
 }
 .card-logo-overlay--round{border-radius:50%;padding:3px;object-fit:cover}
+.card-logo-overlay--wide{width:130px;height:40px;border-radius:6px;padding:4px}
 
 /* Business Kids card slides (gradient, no photo) */
 .bk-slide{
@@ -242,6 +243,16 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 .benefit-icon-blue{background:#e8f1ff;border:3px solid var(--b4k-blue)}
 .benefit-icon-yellow{background:#fff8d6;border:3px solid var(--b4k-yellow)}
 
+/* ── BENEFITS PILLS ── */
+.benefits-pills-wrap{padding:12px 0 4px}
+.benefits-pills-title{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(15px,2vw,21px);color:var(--b4k-red);margin-bottom:14px;text-align:center}
+.benefits-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.bpill{display:inline-block;padding:10px 22px;border-radius:50px;font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(12px,1.25vw,14px);color:#fff;line-height:1.3;text-align:center}
+.bpill-red{background:var(--b4k-red)}
+.bpill-blue{background:var(--b4k-blue)}
+.bpill-yellow{background:var(--b4k-yellow);color:#1a1a1a}
+.bpill-green{background:#27ae60}
+
 /* ── CAROUSEL ── */
 .carousel{position:relative;width:100%;background:#ddd;border-radius:4px}
 .carousel__viewport{overflow:hidden;width:100%;border-radius:4px;display:block}
@@ -252,9 +263,27 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;
 }
-.carousel--card .carousel__slide{height:clamp(180px,22vw,280px)}
+.carousel--card .carousel__slide{height:clamp(200px,24vw,300px)}
 
-.slide-img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0)}
+.slide-img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0)}
+
+/* ── HERO SLIDE: B4K COLLAGE GRID ── */
+.slide-collage-grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;overflow:hidden}
+.slide-collage-grid--6{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr}
+.slide-collage-grid--3{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr}
+.slide-collage-grid img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* ── HERO SLIDE: STEAM BADGES ── */
+.slide-steam-badges{position:absolute;bottom:18px;right:18px;display:flex;gap:10px;z-index:5}
+.slide-steam-badges img{width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}
+
+/* ── LMS HERO SLIDE (white background image) ── */
+.slide-img--lms{object-fit:contain;object-position:center;background:#fff}
+.slide-overlay--lms{background:linear-gradient(to top,rgba(220,30,30,.65) 0%,transparent 55%)}
+
+/* ── BUSINESS KIDS SHARK SLIDE ── */
+.carousel__slide--bk-shark{background:linear-gradient(135deg,#0A2A66 0%,#1D4ED8 100%)}
+.slide-img--contain{object-fit:contain;object-position:center;padding:10px}
 .carousel__slide--link{text-decoration:none;color:inherit;cursor:pointer}
 .slide-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:18px;background:rgba(0,0,0,.52);z-index:2}
 .slide-title{color:#fff;font-family:'Poppins',sans-serif;font-size:24px;font-weight:800;margin:0}
@@ -283,7 +312,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 .carousel--card .carousel__progress{display:none}
 
 /* ── CARD CAROUSEL WRAPPER ── */
-.card-carousel-wrap{position:relative;padding:0 20px;margin:0 -4px}
+.card-carousel-wrap{position:relative;padding:0 20px;margin:0 -4px;flex-shrink:0}
 
 /* ── REGISTER BUTTON ── */
 .reg-btn{
@@ -421,7 +450,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   .extras-wide-content{gap:10px}
   .extras-wide-item{min-width:80px;flex:1 1 80px}
   .benefit-icon{width:50px;height:50px;font-size:22px}
-  .card-logo-overlay{width:44px;height:44px;top:8px;right:8px}
+  .card-logo-overlay{width:56px;height:56px;top:8px;right:8px}
   .contact-horizontal{flex-direction:column;align-items:flex-start}
   .contact-horizontal .reg-btn{margin-left:0}
   .testimonial-card{padding:20px 18px}
@@ -507,6 +536,10 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 }
 .reg-parent-label--mom{background:var(--b4k-red)}
 .reg-parent-label--dad{background:var(--b4k-blue)}
+.reg-parent-label--guardian{background:var(--b4k-blue)}
+.reg-parent-block--single{max-width:560px}
+.reg-parent-fields--single{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 16px}
+@media(max-width:700px){.reg-parent-fields--single{grid-template-columns:1fr}}
 .reg-parent-fields{
   border:2px solid #e8e8e8;border-radius:0 0 6px 6px;
   padding:16px 16px 8px;
@@ -524,7 +557,8 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 
 /* Shared form field styles */
 .form-group{margin-bottom:16px;display:flex;flex-direction:column}
-.form-group label{font-weight:700;margin-bottom:6px;color:#333;font-size:13px;font-family:'Poppins',sans-serif}
+.form-group label{font-weight:700;margin-bottom:6px;color:#333;font-size:13px;font-family:'Poppins',sans-serif;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.field-hint{font-weight:500;color:#999;font-size:11px;font-style:italic}
 .form-group input,
 .form-group select{
   padding:11px 14px;
@@ -546,6 +580,11 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
   padding:20px;text-align:center;font-weight:700;
   color:#007a30;font-size:16px;margin-top:20px;display:none;
 }
+
+.reg-privacy-row{margin:24px 0 8px}
+.reg-privacy-label{display:flex;align-items:flex-start;gap:10px;font-size:13px;font-weight:600;color:#444;cursor:pointer;line-height:1.5}
+.reg-privacy-label input[type=checkbox]{margin-top:2px;flex-shrink:0;width:16px;height:16px;accent-color:var(--b4k-red)}
+.reg-privacy-label a{color:var(--b4k-blue);text-underline-offset:2px}
 
 .reg-submit-row{margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .reg-submit-row .reg-btn{margin-top:0;font-size:16px;height:52px;padding:0 40px}

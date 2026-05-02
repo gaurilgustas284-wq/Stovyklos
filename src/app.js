@@ -575,15 +575,11 @@
           `Tema ir data: ${d.tema || ''}`,
           ``,
           `Vaiko vardas pavardė: ${d.vaiko_vardas_pavarde || ''}`,
-          `Klasė / grupė: ${d.klase_grupe || ''}`,
+          `Mokymo įstaiga: ${d.mokymo_istaiga || ''}`,
           ``,
-          `Mamos vardas pavardė: ${d.mamos_vardas_pavarde || ''}`,
-          `Mamos telefonas: ${d.mamos_telefonas || ''}`,
-          `Mamos el. paštas: ${d.mamos_epastas || ''}`,
-          ``,
-          `Tėvo vardas pavardė: ${d.tevo_vardas_pavarde || ''}`,
-          `Tėvo telefonas: ${d.tevo_telefonas || ''}`,
-          `Tėvo el. paštas: ${d.tevo_epastas || ''}`,
+          `Kontaktinis asmuo: ${d.kontakto_vardas_pavarde || ''}`,
+          `Telefonas: ${d.kontakto_telefonas || ''}`,
+          `El. paštas: ${d.kontakto_epastas || ''}`,
         ].join('\n');
         window.location.href = `mailto:info@steamedukacija.lt?subject=${encodeURIComponent('Registracija į stovyklą – ' + (d.stovykla || ''))}&body=${encodeURIComponent(body)}`;
       });
