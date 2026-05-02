@@ -270,6 +270,7 @@ body.loaded  [data-reveal]{opacity:1;transform:translateY(0);transition:opacity 
 /* ── HERO SLIDE: B4K COLLAGE GRID ── */
 .slide-collage-grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;overflow:hidden}
 .slide-collage-grid--6{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr}
+.slide-collage-grid--3{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr}
 .slide-collage-grid img{width:100%;height:100%;object-fit:cover;object-position:center}
 
 /* ── HERO SLIDE: STEAM BADGES ── */
