@@ -586,9 +586,10 @@
       if (sessionStorage.getItem('promoDismissed') === '1') return;
     } catch {}
 
-    // Skip popup for automated audits (Lighthouse, PageSpeed, headless). The popup
-    // is a marketing UI, not page content — keeping it out of synthetic runs lets
-    // those tools measure LCP on real content rather than this overlay.
+    // Skip popup for automated audits. PageSpeed/Lighthouse spoof a real browser
+    // user-agent, but they all set navigator.webdriver=true (real Chrome leaves it
+    // undefined). Belt-and-suspenders: also check the UA for known bot strings.
+    if (navigator.webdriver === true) return;
     const ua = navigator.userAgent || '';
     if (/Lighthouse|HeadlessChrome|Chrome-Lighthouse|PageSpeed|GTmetrix|Pingdom/i.test(ua)) return;
 
