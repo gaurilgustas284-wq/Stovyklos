@@ -551,14 +551,22 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const data = new FormData(form);
+      const payload = Object.fromEntries(data.entries());
 
-      fetch('/', {
+      fetch('/api/register', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(data).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       })
-      .then(() => {
-        if (success) { success.style.display = 'block'; }
+      .then(async (res) => {
+        const result = await res.json().catch(() => ({}));
+        if (!res.ok || !result.ok) {
+          throw new Error(result.error || 'Įvyko klaida.');
+        }
+        if (success) {
+          success.textContent = '✅ Ačiū! Registracija gauta. Susisieksime su jumis artimiausiu metu.';
+          success.style.display = 'block';
+        }
         form.reset();
         const themeSel = document.getElementById('theme');
         const dateSel  = document.getElementById('date');
@@ -566,22 +574,12 @@
         if (dateSel)  dateSel.innerHTML  = '<option value="">Pirmiau pasirinkite temą</option>';
         if (success) success.scrollIntoView({ behavior: 'smooth', block: 'center' });
       })
-      .catch(() => {
-        const d = Object.fromEntries(data.entries());
-        const body = [
-          `Stovykla: ${d.stovykla || ''}`,
-          `Miestas: ${d.miestas || ''}`,
-          `Amžius: ${d.amzius || ''}`,
-          `Tema ir data: ${d.tema || ''}`,
-          ``,
-          `Vaiko vardas pavardė: ${d.vaiko_vardas_pavarde || ''}`,
-          `Mokymo įstaiga: ${d.mokymo_istaiga || ''}`,
-          ``,
-          `Kontaktinis asmuo: ${d.kontakto_vardas_pavarde || ''}`,
-          `Telefonas: ${d.kontakto_telefonas || ''}`,
-          `El. paštas: ${d.kontakto_epastas || ''}`,
-        ].join('\n');
-        window.location.href = `mailto:info@steamedukacija.lt?subject=${encodeURIComponent('Registracija į stovyklą – ' + (d.stovykla || ''))}&body=${encodeURIComponent(body)}`;
+      .catch((err) => {
+        if (success) {
+          success.textContent = '⚠️ ' + (err && err.message ? err.message : 'Nepavyko išsiųsti. Bandykite vėliau arba parašykite info@steamedukacija.lt');
+          success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
       });
     });
   }

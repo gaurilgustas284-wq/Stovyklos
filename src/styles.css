@@ -1,6 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
 *{box-sizing:border-box}
+
+/* Visually-hidden helper for SEO h1 / screen reader text */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Site credit footer */
+.site-credit-footer{
+  width:100%;
+  padding:18px 16px 22px;
+  text-align:center;
+  background:#fff;
+  font-family:'Nunito',Arial,sans-serif;
+}
+.site-credit-line{
+  margin:2px 0;
+  font-size:12px;
+  line-height:1.5;
+  color:#666;
+}
+.site-credit-link{
+  color:inherit;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.site-credit-link:hover{color:#111}
 html{scroll-behavior:smooth;scroll-padding-top:95px}
 html,body{height:100%;margin:0;padding:0}
 body{margin:0;font-family:'Nunito',Arial,sans-serif;color:#111;overflow-x:hidden;background:#fff}
