@@ -44,8 +44,8 @@ for (const file of files) {
   const maxDim = FILE_OVERRIDES[file] ?? FOLDER_MAX[folder] ?? 1200;
 
   const buf = await readFile(file);
-  const img = sharp(buf, { failOnError: false });
-  const meta = await img.metadata();
+  const img = sharp(buf, { failOnError: false }).rotate();
+  const meta = await sharp(buf).rotate().metadata();
 
   const needsResize = (meta.width || 0) > maxDim || (meta.height || 0) > maxDim;
   const pipeline = needsResize
