@@ -15,10 +15,18 @@ const FOLDER_MAX = {
   'public/bk-imported': 1200, // imported third-party photos
 };
 
+
 // horizontal logos and small overlays — special-case override (max longest side)
 const FILE_OVERRIDES = {
   'public/logos/businesskids-horizontal.png': 320,
   'public/logos/meskuciai.jpeg': 200,
+  // Hero images need 1920px to display crisp at full viewport width on desktop
+  'public/b4k/b4_hero.jpg':              1920,
+  'public/b4k/b4_hero.jpeg':             1920,
+  'public/lms/lms-promo.jpg':            1920,
+  'public/lms/lms-promo.jpeg':           1920,
+  'public/bk/Hero_Carousel_BK.jpg':      1920,
+  'public/bk/Hero_Carousel_BK.jpeg':     1920,
 };
 
 const WEBP_QUALITY = 75;
