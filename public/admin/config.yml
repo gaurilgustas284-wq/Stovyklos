@@ -13,7 +13,7 @@ backend:
   # Cloudflare Worker, tvarkantis GitHub prisijungimą. KOL KAS PLACEHOLDER —
   # pakeiskite į savo worker adresą pagal ADMIN-SETUP.md instrukciją.
   # (Lokaliam testavimui Chrome/Edge naršyklėje šito nereikia.)
-  base_url: https://REIKIA-PAKEISTI.workers.dev
+  base_url: https://sveltia-cms-auth.stovyklos.workers.dev/
 
 site_url: https://topstovyklos.lt
 display_url: https://topstovyklos.lt
